@@ -18,10 +18,13 @@ War is a simple card game where each player plays a card, and the player with th
 
 ## 🚀 Getting Started
 
+### 🌐 Live Demo
+Play the game online: [scrimbawarcardgame.netlify.app](https://scrimbawarcardgame.netlify.app/)
+
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 
-### Installation
+### Local Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/brilz929/War-card-game.git
