@@ -68,7 +68,7 @@
 
         .game-title {
             font-family: Impact, 'Arial Black', sans-serif;
-            font-size: 4.5em;
+            font-size: 3em;
             color: #ffd700;
             text-shadow: 
                 3px 3px 0 #b8860b,
@@ -112,7 +112,6 @@
         .controls {
             display: flex;
             justify-content: space-between;
-            align-items: center;
             margin-bottom: 30px;
             background: rgba(0,0,0,0.3);
             padding: 15px;
@@ -231,7 +230,7 @@
             position: relative;
         }
 
-        .play-area::before {
+        /* .play-area::before {
             content: '♠ ♥ ♣ ♦';
             position: absolute;
             top: 10px;
@@ -240,7 +239,7 @@
             color: rgba(255,215,0,0.1);
             font-size: 1.5em;
             letter-spacing: 20px;
-        }
+        } */
 
         .cards-display {
             display: flex;
@@ -322,18 +321,15 @@
 
         .result-display.win {
             color: #4caf50;
-            /* text-shadow: 0 0 20px rgba(76,175,80,0.8); */
         }
 
         .result-display.lose {
             color: #f44336;
-            /* text-shadow: 0 0 20px rgba(244,67,54,0.8); */
         }
 
         .result-display.war {
             color: #ff9800;
             font-size: 3em;
-            /* text-shadow: 0 0 30px rgba(255,152,0,0.8); */
         }
 
         .game-stats {
@@ -396,7 +392,6 @@
             font-size: 3em;
             color: #ffd700;
             margin-bottom: 20px;
-            /* text-shadow: 0 0 20px rgba(255,215,0,0.8); */
             letter-spacing: 3px;
         }
 
@@ -450,9 +445,9 @@
                 font-size: 2.5em;
                 letter-spacing: 3px;
             }
-
-            .cards-display {
-                gap: 30px;
+           
+            .controls {
+                gap: 20px;
             }
 
             .card-slot {
