@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino War - Card Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <body>
+    <div class="casino-table">
+        <!-- Background suit decorations -->
+        <div class="suit-decoration suit-top-left">♠</div>
+        <div class="suit-decoration suit-top-right">♥</div>
+        <div class="suit-decoration suit-bottom-left">♣</div>
+        <div class="suit-decoration suit-bottom-right">♦</div>
+
+        <div class="game-header">
+            <div class="casino-lights">
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+            </div>
+            <h1 class="game-title">CASINO WAR</h1>
+            <div class="subtitle">♠ High Card Wins ♠</div>
+            <!-- <div class="chips-decoration">
+                <div class="chip red"></div>
+                <div class="chip blue"></div>
+                <div class="chip black"></div>
+            </div> -->
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-gold" id="newGameBtn">NEW GAME</button>
+            <div class="deck-counter" id="deckCounter">PLACE YOUR BETS</div>
+        </div>
+
+        <div class="scoreboard">
+            <div class="score-panel">
+                <div class="player-name">♣ HOUSE ♣</div>
+                <div class="score-display" id="houseScore">0</div>
+            </div>
+            <div class="score-panel">
+                <div class="player-name">♦ PLAYER ♦</div>
+                <div class="score-display" id="playerScore">0</div>
+            </div>
+        </div>
+
+        <div class="play-area">
+            <div class="result-display" id="resultDisplay"></div>
+            <div class="cards-display">
+                <div class="card-space">
+                    <div class="card-slot" id="houseCard">
+                        <span class="empty-slot">Ready</span>
+                    </div>
+                    <span class="card-label">House</span>
+                </div>
+                <div class="vs-divider">VS</div>
+                <div class="card-space">
+                    <div class="card-slot" id="playerCard">
+                        <span class="empty-slot">Ready</span>
+                    </div>
+                    <span class="card-label">Player</span>
+                </div>
+            </div>
+            <!-- <div class="result-display" id="resultDisplay"></div> -->
+        </div>
+
+        <div class="draw-button-container">
+            <button class="btn btn-red" id="drawBtn" disabled>DEAL CARDS</button>
+        </div>
+
+        <div class="game-stats">
+            <div class="stat">
+                <div class="stat-label">Hands</div>
+                <div class="stat-value" id="handsPlayed">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Wars</div>
+                <div class="stat-value" id="warsCount">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Win %</div>
+                <div class="stat-value" id="winRate">0%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Streak</div>
+                <div class="stat-value" id="streak">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="final-result" id="finalResult">
+        <h2 id="finalTitle">GAME OVER</h2>
+        <div class="final-score" id="finalScore"></div>
+        <button class="btn btn-gold play-again-btn" onclick="location.reload()">PLAY AGAIN</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
